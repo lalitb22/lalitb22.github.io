@@ -1,0 +1,53 @@
+/* 1. Deep Midnight Slate Sidebar */
+#sidebar {
+  background-color: #161b22 !important;
+  border-right: 1px solid #30363d !important;
+
+  .site-title a {
+    color: #f0f6fc !important;
+  }
+  .site-subtitle {
+    color: #8b949e !important;
+  }
+  .nav-item .nav-link {
+    color: #c9d1d9 !important;
+
+    &.active,
+    &:hover {
+      color: #ffffff !important;
+      background-color: #21262d !important;
+    }
+  }
+  .sidebar-bottom a {
+    color: #8b949e !important;
+  }
+}
+
+/* 2. Warm Ivory Main Canvas */
+body,
+#main-wrapper {
+  background-color: #faf8f5 !important;
+  color: #1f2328 !important;
+}
+
+/* 3. Clean Card Containers */
+.card,
+#post-list .card,
+article.card,
+.post-preview {
+  background-color: #ffffff !important;
+  border: 1px solid #e8e4dc !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* 4. Editorial Typography & Accents */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+#post-list .post-preview .post-title {
+  color: #0d1117 !important;
+}
+
+a,
+.post-preview a {
+  color: #b45309 !important;
+}
