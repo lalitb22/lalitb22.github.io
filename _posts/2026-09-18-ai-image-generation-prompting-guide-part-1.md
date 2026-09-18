@@ -1,5 +1,5 @@
 ---
-title: "AI Image Generation Best Practices: How to Write Effective Prompts"
+title: "Image Generation: How to Write Effective Prompts - Part 1"
 date: 2026-09-18 12:00:00 +0000
 categories: [Artificial Intelligence, Prompt Engineering]
 tags: [ai image generation, text to image, prompt guide, midjourney, stable diffusion, digital creation]
