@@ -1,10 +1,17 @@
 ---
 title: "Qwen 8.4B Compressed Model: Is It Well Enough for Coding?"
-date: 2026-09-27 02:00:00 +0530
-categories: [Artificial Intelligence, Local LLM]
-tags: [qwen, coding, llama-cpp, local-ai, benchmarks]
-math: false
-mermaid: false
+date: 2026-09-27T02:00:00+05:30
+layout: single
+classes: wide
+categories:
+  - Artificial Intelligence
+  - Local LLM
+tags:
+  - qwen
+  - coding
+  - llama-cpp
+  - local-ai
+  - benchmarks
 ---
 
 Running large language models locally has shifted from an experimental hobby to a serious daily workflow. With proprietary models charging per token and transmitting private codebase data to remote datacenters, developers frequently ask: **Can an 8.4 GB compressed Qwen model handle daily programming tasks effectively?**
