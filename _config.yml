@@ -1,6 +1,6 @@
 # Theme Setup
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "neon" # Built-in skins: "air", "aqua", "contrast", "dark", "dirt", "neon", "plum", "sunrise"
+minimal_mistakes_skin: "plum" # Built-in skins: "air", "aqua", "contrast", "dark", "dirt", "neon", "plum", "sunrise"
 
 # Site Information
 title: "Engineering & Systems Journal"
