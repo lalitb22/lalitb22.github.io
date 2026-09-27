@@ -1,12 +1,19 @@
 ---
 title: "Image Generation: How to Write Effective Prompts - Part 1"
-date: 2026-09-18 12:00:00 +0000
-categories: [Artificial Intelligence, Prompt Engineering]
-tags: [ai image generation, text to image, prompt guide, midjourney, stable diffusion, digital creation]
-description: "A standard, fluff-free guide to structuring AI image prompts. Learn core formulas for product ads, portraits, and landscape photography."
-pin: false
-math: false
-mermaid: false
+excerpt: "A standard, fluff-free guide to structuring AI image prompts. Learn core formulas for product ads, portraits, and landscape photography."
+date: 2026-09-18T12:00:00Z
+layout: single
+classes: wide # Optional: makes the post body wider and readable
+categories:
+  - Artificial Intelligence
+  - Prompt Engineering
+tags:
+  - "ai image generation"
+  - "text to image"
+  - "prompt guide"
+  - "midjourney"
+  - "stable diffusion"
+  - "digital creation"
 ---
 
 Getting reliable, high-quality results from AI image generators comes down to one standard workflow: **describe the physical elements of the scene** rather than padding your input with generic quality buzzwords.
