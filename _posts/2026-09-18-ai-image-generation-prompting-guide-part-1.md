@@ -1,6 +1,6 @@
 ---
 title: "Image Generation: How to Write Effective Prompts - Part 1"
-excerpt: "A standard, fluff-free guide to structuring AI image prompts. Learn core formulas for product ads, portraits, and landscape photography."
+excerpt: "Learn a practical framework for AI image prompts, with examples for product photography, portraits, and landscapes."
 date: 2026-09-18T12:00:00Z
 layout: single
 classes: wide # Optional: makes the post body wider and readable

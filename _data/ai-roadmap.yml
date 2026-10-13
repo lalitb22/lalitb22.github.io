@@ -5,12 +5,12 @@
   status: published
 - day: 2
   title: Structured Extraction and Pydantic
-  description: Turn model output into typed data with schema validation and useful failure handling.
+  description: Convert model responses into validated, typed data, with schema checks and error handling.
   url: null
   status: upcoming
 - day: 3
   title: Embeddings and Semantic Search
-  description: Build a retrieval workflow and explore how embeddings capture meaning.
+  description: Create embeddings, compare semantic similarity, and build a reusable search workflow.
   url: null
   status: upcoming
 - day: 4
@@ -25,7 +25,7 @@
   status: upcoming
 - day: 6
   title: Tool Calling and Deterministic Calculations
-  description: Give models tools while keeping arithmetic and business rules in reliable code.
+  description: Connect models to tools and keep calculations and application rules in deterministic code.
   url: null
   status: upcoming
 - day: 7
@@ -45,6 +45,6 @@
   status: upcoming
 - day: 10
   title: Integrated Workflow and Architecture Review
-  description: Bring the pieces together and review the system from input to production behavior.
+  description: Integrate inference, retrieval, tools, and evaluation into a workflow; review architecture and operational tradeoffs.
   url: null
   status: upcoming

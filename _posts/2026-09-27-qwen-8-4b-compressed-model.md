@@ -1,5 +1,6 @@
 ---
 title: "Qwen 8.4B Compressed Model: Is It Well Enough for Coding?"
+excerpt: "Explore the strengths, limitations, and hardware tradeoffs of a compressed Qwen model for local coding workflows."
 date: 2026-09-27T02:00:00+05:30
 layout: single
 classes: wide

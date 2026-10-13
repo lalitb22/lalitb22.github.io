@@ -12,10 +12,9 @@ or a `theme:` setting alongside the remote theme. SEO metadata, syntax highlight
 RSS, sitemap, and the table-of-contents include remain theme/Jekyll features.
 There is no separate frontend build system or new deployment requirement.
 
-This checkout has no deployment workflow. In GitHub Settings → Pages, confirm
-the actual publishing branch and root directory, or the existing Actions workflow.
-The working branch `migrate-to-minimal-mistakes` is not assumed to be the publishing
-branch. Deploy only after review and approval.
+GitHub Pages deploys `main` through its existing dynamic **pages build and
+deployment** workflow. There is no custom workflow in this checkout. Keep this
+working deployment method; no Netlify setup is needed.
 
 ## Design files
 
@@ -48,7 +47,7 @@ results distinct from illustrative examples.
 
 Posts can set `last_modified_at` to an ISO date to appear in Recently Updated.
 Until update dates exist, that panel uses publication dates with an explanatory
-label. Trending Tags ranks tags by article count, not visitor analytics.
+label. Topics are ranked by article frequency; their counts are not displayed.
 
 ## Verification and optional preview
 
@@ -73,4 +72,7 @@ bundle exec jekyll build
 ```
 
 These commands are optional instructions; they were not run during this redesign.
-No commits, pushes, merges, or branch changes are part of this update.
+The original migration verification notes above describe that earlier pass.
+For the sidebar and copy refinements, the local build was attempted but Jekyll
+dependencies were unavailable. The existing GitHub Pages workflow verifies the
+commit pushed to `main`; check its result in the repository Actions tab.
