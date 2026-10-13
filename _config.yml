@@ -8,6 +8,17 @@ name: "Lalit"
 description: "Technical notes on systems, AI models, and architecture."
 url: "https://lalitb22.github.io"
 baseurl: ""
+repository: "lalitb22/lalitb22.github.io"
+markdown: kramdown
+highlighter: rouge
+include:
+  - _pages
+exclude:
+  - README.md
+  - docs
+  - scripts
+  - vendor
+
 
 # Author Profile (Left Sidebar)
 author:
@@ -35,3 +46,5 @@ defaults:
 plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
