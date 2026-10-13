@@ -1,0 +1,9 @@
+---
+layout: journal
+permalink: /tags/
+title: Tags
+---
+<header class="journal-heading"><p class="eyebrow">EXPLORE THE JOURNAL</p><h1>Tags</h1><p>Browse engineering notes by tag.</p></header>
+{% assign groups = site.tags | sort %}
+<nav class="taxonomy-index" aria-label="Tags index">{% for group in groups %}<a href="#{{ group[0] | slugify }}">{{ group[0] | escape }} · {{ group[1].size }}</a>{% endfor %}</nav>
+{% for group in groups %}<section class="taxonomy-group" id="{{ group[0] | slugify }}"><h2>{{ group[0] | escape }} <span>{{ group[1].size }} {% if group[1].size == 1 %}article{% else %}articles{% endif %}</span></h2><div class="post-list">{% assign posts = group[1] | sort: 'date' | reverse %}{% for post in posts %}{% include journal/post-card.html post=post %}{% endfor %}</div></section>{% endfor %}

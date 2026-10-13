@@ -1,40 +1,76 @@
 # Engineering & Systems Journal
 
-Lalit's technical journal at <https://lalitb22.github.io/>, including a 10-day,
-30-hour practical AI Engineering learning journey. Existing posts remain in
-`_posts/`; the roadmap and chapters live in `_pages/` with explicit URLs.
+Lalit's journal at <https://lalitb22.github.io/>. The design uses the Soft Slate &
+Muted Blue palette, a profile sidebar, article cards, a data-driven AI roadmap,
+and discovery panels. Articles have a separate reading layout.
 
 ## Theme and deployment
 
-This site uses **Minimal Mistakes 4.24.0 via remote theme**, pinned in
-`_config.yml`. The Gemfile uses `github-pages` and explicitly installs
-`jekyll-include-cache`. Do not also install `minimal-mistakes-jekyll` or add a
-`theme:` setting. See the theme's
-[GitHub Pages setup](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+Minimal Mistakes **4.24.0** remains pinned as a remote theme in `_config.yml`.
+The Gemfile uses `github-pages` and `jekyll-include-cache`; do not add a theme gem
+or a `theme:` setting alongside the remote theme. SEO metadata, syntax highlighting,
+RSS, sitemap, and the table-of-contents include remain theme/Jekyll features.
+There is no separate frontend build system or new deployment requirement.
 
-There is no deployment workflow in this checkout. In GitHub **Settings → Pages**,
-verify **Deploy from a branch**, the intended publishing branch, and **/ (root)**.
-The working branch is `migrate-to-minimal-mistakes`; it need not be the production
-publishing branch. The unauthenticated Pages API returned 404 during this update,
-so an administrator must verify the actual settings.
+This checkout has no deployment workflow. In GitHub Settings → Pages, confirm
+the actual publishing branch and root directory, or the existing Actions workflow.
+The working branch `migrate-to-minimal-mistakes` is not assumed to be the publishing
+branch. Deploy only after review and approval.
 
-If Pages uses GitHub Actions, verify that its workflow builds Jekyll with this
-Gemfile and uploads `_site`. This checkout does not provide such a workflow.
+## Design files
 
-## Publishing
+- `_layouts/journal-base.html`: document shell, theme head, SEO, and scripts.
+- `_layouts/journal.html`: profile, content, and discovery columns.
+- `_layouts/single.html`: article typography, TOC, tags, sharing, and adjacent posts.
+- `_includes/head/custom.html`: custom stylesheet and explicit light color scheme.
+- `_includes/journal/`: sidebar, navigation, feature, post card, roadmap, panels.
+- `assets/css/main.scss`: standard Minimal Mistakes SCSS entry point with palette overrides.
+- `assets/css/journal.css`: shared CSS tokens, components, and responsive rules.
+- `_data/navigation.yml`: global navigation and chapter navigation data.
+- `_data/ai-roadmap.yml`: ten modules, descriptions, publication status, and URLs.
+- `index.html`: homepage sections derived from posts and roadmap data.
+- `_pages/`: AI landing page, preserved Day 1 tutorial, categories, tags, archives, About.
 
-No local Ruby installation or build is required. Commit and push the website
-changes, then check the GitHub Pages build in the repository's Actions tab.
-Deployment occurs when the changes reach the configured publishing branch.
+The profile expects a PNG at `assets/images/avatar.png`, configured through
+`author.avatar` in `_config.yml`. An initials mark is used if that setting is absent.
+Only the existing GitHub account and RSS link are used; no contact details are invented.
 
-## Adding chapters
+## Content maintenance
 
-1. Add a Markdown page in `_pages/` with `layout: single` and an explicit URL.
-2. Enable `toc`, `toc_sticky`, and `sidebar: {nav: ai-engineering}`.
-3. Update `_data/navigation.yml`, the roadmap, and the previous chapter's next
-   link when the new chapter exists. Keep unpublished chapters marked planned.
-4. Distinguish measured observations from illustrative code and record limits.
-5. Review the diff, then check the GitHub Pages build and published pages.
+Existing post files, categories, tags, dates, and URL generation are unchanged.
+Day 1's technical content and recorded experiments are preserved; only its next
+chapter note was aligned to the new roadmap. Day 1 is the only published module.
 
-Preserve existing post filenames, categories, dates, and global permalink
-settings to retain article URLs. This update leaves both article files unchanged.
+When publishing a chapter, add its page with `layout: single` and an explicit
+permalink. Then update its roadmap record to `status: published` with that exact
+URL. Upcoming records have `url: null` and render without links. Keep experimental
+results distinct from illustrative examples.
+
+Posts can set `last_modified_at` to an ISO date to appear in Recently Updated.
+Until update dates exist, that panel uses publication dates with an explanatory
+label. Trending Tags ranks tags by article count, not visitor analytics.
+
+## Verification and optional preview
+
+At the user's request, no local Jekyll build, dependency installation, preview
+server, or visual viewport test was completed for this redesign. Source checks
+cover YAML/front matter, local navigation/roadmap destinations, Liquid block
+balance, unchanged post files, and whitespace. Actual generated HTML and rendered
+layout should be reviewed before publishing.
+
+If you later choose to preview in an environment with the project dependencies
+already available:
+
+```sh
+bundle exec jekyll serve
+```
+
+Open <http://localhost:4000/> and check the homepage, Day 1, both posts, categories,
+tags, archives, and About at 375 px, 768 px, and 1440 px. To build without serving:
+
+```sh
+bundle exec jekyll build
+```
+
+These commands are optional instructions; they were not run during this redesign.
+No commits, pushes, merges, or branch changes are part of this update.

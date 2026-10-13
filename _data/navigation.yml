@@ -1,13 +1,26 @@
 main:
-  - title: "Articles"
+  - title: Home
     url: /
-  - title: "AI Engineering"
+    symbol: "⌂"
+  - title: AI Engineering
     url: /ai-engineering/
-
+    symbol: "◈"
+  - title: Categories
+    url: /categories/
+    symbol: "▦"
+  - title: Tags
+    url: /tags/
+    symbol: "#"
+  - title: Archives
+    url: /archives/
+    symbol: "≡"
+  - title: About
+    url: /about/
+    symbol: "◎"
 ai-engineering:
   - title: "AI Engineering · 30 hours"
     children:
-      - title: "Roadmap & chapter index"
+      - title: Roadmap & chapter index
         url: /ai-engineering/
-      - title: "Day 1 · Local LLM Inference"
+      - title: Day 1 · Local LLM Inference
         url: /ai-engineering/day-1-local-llm-inference-ollama/

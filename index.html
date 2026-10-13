@@ -1,7 +1,8 @@
 ---
-layout: home
-author_profile: true
+layout: journal
+title: Engineering & Systems Journal
 ---
-
-<p>A journal of practical experiments in systems, AI models, and architecture.</p>
-<p>Follow the <a href="{{ '/ai-engineering/' | relative_url }}">10-day AI Engineering learning journey</a>: 30 hours of hands-on work, from local inference to production reliability.</p>
+<header class="journal-heading"><p class="eyebrow">BUILD · MEASURE · UNDERSTAND</p><h1>Engineering &amp; Systems Journal</h1><p>Technical notes on systems, AI models, and architecture.</p></header>
+{% include journal/feature.html %}
+<section aria-labelledby="recent-heading" class="journal-section"><div class="section-heading"><h2 id="recent-heading">Recent articles</h2><a href="{{ '/archives/' | relative_url }}">All articles ↗</a></div><div class="post-list">{% for post in site.posts limit:5 %}{% include journal/post-card.html post=post %}{% endfor %}</div></section>
+{% include journal/roadmap.html %}

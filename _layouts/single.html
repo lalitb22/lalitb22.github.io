@@ -1,0 +1,13 @@
+---
+layout: journal
+---
+<article class="journal-article" itemscope itemtype="https://schema.org/Article">
+<header class="article-heading"><p class="eyebrow">{% if page.collection == 'posts' %}ENGINEERING NOTES{% else %}THE JOURNAL{% endif %}</p><h1 itemprop="headline">{{ page.title | escape }}</h1>
+{% if page.date %}<p class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %-d, %Y' }}</time> · {% assign words = content | strip_html | number_of_words %}{% assign minutes = words | plus: 199 | divided_by: 200 %}{{ minutes | at_least: 1 }} min read</p>{% endif %}
+{% if page.categories.size > 0 %}<div class="category-links">{% for category in page.categories %}<a href="{{ '/categories/' | relative_url }}#{{ category | slugify }}">{{ category | escape }}</a>{% endfor %}</div>{% endif %}</header>
+{% if page.toc %}<details class="article-toc" open><summary>{{ page.toc_label | default: 'On this page' | escape }}</summary>{% include toc.html html=content sanitize=true h_min=2 h_max=3 class='toc-list' %}</details>{% endif %}
+<div class="article-body" itemprop="articleBody">{{ content }}</div>
+{% if page.tags.size > 0 %}<nav class="article-tags" aria-label="Article tags">{% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag | escape }}</a>{% endfor %}</nav>{% endif %}
+{% if page.share %}<div class="article-sharing">{% include social-share.html %}</div>{% endif %}
+{% if page.previous or page.next %}<nav class="article-pagination" aria-label="More articles">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>← Previous article</span>{{ page.previous.title | escape }}</a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>Next article →</span>{{ page.next.title | escape }}</a>{% endif %}</nav>{% endif %}
+</article>
