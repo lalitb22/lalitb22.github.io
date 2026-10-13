@@ -151,7 +151,8 @@ a.module-card:hover { border-color: var(--journal-accent); }
   .journal-shell, .journal-shell--reading { grid-template-columns: minmax(0, 1fr); padding: 0 20px 32px; gap: 24px; }
   .journal-sidebar { position: static; min-height: 0; max-height: none; border-radius: 0 0 12px 12px; border-left: 1px solid var(--journal-border); padding: 20px; }
   .profile { display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 14px; }
-  .profile-mark, .profile-avatar { width: 52px; height: 52px; grid-row: span 3; margin: 0; border-radius: 14px; font-size: 20px; }
+  .profile-mark, .profile-avatar { width: 52px; height: 52px; grid-column: 1; grid-row: 1 / span 3; margin: 0; border-radius: 14px; font-size: 20px; }
+  .profile-brand, .profile-name, .profile-role { grid-column: 2; }
   .profile-brand { align-self: end; font-size: 18px; }
   .journal-site .profile-name { font-size: 12px; margin-top: 2px; }
   .journal-site .profile-role { margin-top: 3px; font-size: 12px; }
