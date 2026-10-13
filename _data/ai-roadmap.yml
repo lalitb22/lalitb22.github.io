@@ -1,0 +1,50 @@
+- day: 1
+  title: Local LLM Inference with Ollama
+  description: Run Qwen locally with Python. Measure latency, token throughput, output limits, and temperature.
+  url: /ai-engineering/day-1-local-llm-inference-ollama/
+  status: published
+- day: 2
+  title: Structured Extraction and Pydantic
+  description: Turn model output into typed data with schema validation and useful failure handling.
+  url: null
+  status: upcoming
+- day: 3
+  title: Embeddings and Semantic Search
+  description: Build a retrieval workflow and explore how embeddings capture meaning.
+  url: null
+  status: upcoming
+- day: 4
+  title: Vision-Language Models
+  description: Connect images and text in a practical multimodal inference workflow.
+  url: null
+  status: upcoming
+- day: 5
+  title: Model Evaluation
+  description: Define a repeatable test set and measure task quality against a baseline.
+  url: null
+  status: upcoming
+- day: 6
+  title: Tool Calling and Deterministic Calculations
+  description: Give models tools while keeping arithmetic and business rules in reliable code.
+  url: null
+  status: upcoming
+- day: 7
+  title: FastAPI and Asynchronous Processing
+  description: Serve validated inference requests and manage asynchronous work.
+  url: null
+  status: upcoming
+- day: 8
+  title: Inference Performance Optimization
+  description: Examine throughput, latency, caching, and resource tradeoffs.
+  url: null
+  status: upcoming
+- day: 9
+  title: AI Reliability and Observability
+  description: Trace failures and design timeouts, bounded retries, and operational signals.
+  url: null
+  status: upcoming
+- day: 10
+  title: Integrated Workflow and Architecture Review
+  description: Bring the pieces together and review the system from input to production behavior.
+  url: null
+  status: upcoming

@@ -1,0 +1,8 @@
+---
+layout: journal
+permalink: /archives/
+title: Archives
+---
+<header class="journal-heading"><p class="eyebrow">THE NOTEBOOK</p><h1>Article archives</h1><p>All engineering notes, in publication order.</p></header>
+{% assign years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+{% for year in years %}<section class="taxonomy-group" aria-labelledby="year-{{ year.name }}"><h2 id="year-{{ year.name }}">{{ year.name }} <span>{{ year.items.size }} articles</span></h2><div class="post-list">{% for post in year.items %}{% include journal/post-card.html post=post %}{% endfor %}</div></section>{% endfor %}

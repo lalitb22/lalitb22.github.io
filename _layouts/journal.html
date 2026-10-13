@@ -1,0 +1,10 @@
+---
+layout: journal-base
+---
+<a class="journal-skip" href="#journal-main">Skip to content</a>
+<div class="journal-shell{% if page.layout == 'single' %} journal-shell--reading{% endif %}">
+{% include journal/sidebar.html %}
+<main id="journal-main" class="journal-main" tabindex="-1">{{ content }}</main>
+{% unless page.layout == 'single' %}{% include journal/panels.html %}{% endunless %}
+</div>
+<footer class="journal-footer">{{ site.title }} · Practical experiments, documented. <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></footer>
