@@ -241,6 +241,6 @@ The completed experiments show that output budgets influence latency and can con
 - Repeat a naming prompt at temperatures 0, 0.7, and 1.2.
 - Save observations with enough context to reproduce them.
 
-**Next: Day 2 — Structured Extraction and Pydantic (upcoming).** Explore typed model output and schema validation. This chapter will be linked from the roadmap when published.
+**Next: [Day 2 — Structured Extraction and Pydantic]({{ "/ai-engineering/day-2-structured-extraction-pydantic/" | relative_url }}).** Explore typed model output and schema validation.
 
 [← Back to the roadmap and chapter index]({{ '/ai-engineering/' | relative_url }}){: .btn .btn--primary}

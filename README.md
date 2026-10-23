@@ -38,7 +38,8 @@ Only the existing GitHub account and RSS link are used; no contact details are i
 
 Existing post files, categories, tags, dates, and URL generation are unchanged.
 Day 1's technical content and recorded experiments are preserved; only its next
-chapter note was aligned to the new roadmap. Day 1 is the only published module.
+chapter note was aligned to the new roadmap. Days 1 and 2 are published. Day 2 lives in `_posts/` with an explicit series URL
+and appears in the homepage, archives, categories, tags, and RSS feed.
 
 When publishing a chapter, add its page with `layout: single` and an explicit
 permalink. Then update its roadmap record to `status: published` with that exact

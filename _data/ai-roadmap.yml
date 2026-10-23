@@ -6,8 +6,8 @@
 - day: 2
   title: Structured Extraction and Pydantic
   description: Convert model responses into validated, typed data, with schema checks and error handling.
-  url: null
-  status: upcoming
+  url: /ai-engineering/day-2-structured-extraction-pydantic/
+  status: published
 - day: 3
   title: Embeddings and Semantic Search
   description: Create embeddings, compare semantic similarity, and build a reusable search workflow.
