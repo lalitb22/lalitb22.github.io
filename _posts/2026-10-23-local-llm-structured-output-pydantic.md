@@ -19,6 +19,7 @@ read_time: true
 
 > **AI Engineering Learning Journal — Day 2**  
 > **Status:** Core structured-output extraction tested successfully; retry failure-path exercise demonstrated in code but not yet verified in a recorded run.
+{: .journal-callout .journal-callout--info}
 
 On Day 1, I explored local inference with Ollama: warm versus cold starts, token throughput, output limits, and temperature. On Day 2, I moved to a different engineering challenge: **how do we turn probabilistic LLM responses into data an application can safely consume?**
 
@@ -45,6 +46,7 @@ Pydantic schema validation
 ```
 
 **JSON syntax, schema validity, and factual accuracy are three different guarantees.** The first two can be checked mechanically; the third requires evidence and domain-specific checks.
+{: .journal-callout .journal-callout--caution}
 
 ## Environment
 
@@ -133,6 +135,7 @@ python3.12 day2_structured.py
 ## Observed result
 
 I ran the follow-up extraction script twice. Both runs passed validation on the first attempt and returned the same incident object:
+{: .journal-callout .journal-callout--success}
 
 ```json
 {
